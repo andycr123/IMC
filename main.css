@@ -1,0 +1,115 @@
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #000000; /* Gris claro */
+}
+
+h1 {
+    text-align: center;
+    color: #f8ff00; /* Azul oscuro */
+}
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1; /* Anterior a otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Permite desplazamiento si el contenido excede el tamaño del modal */
+    background-color: rgba(0,0,0,0.4); /* Fondos semi-transparentes */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrado verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#formulario {
+    margin-bottom: 20px;
+    background-color: #FFFFFF; /* Blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 20px;
+    width: 80%; /* Ajusta el ancho del formulario */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#formulario label {
+    display: block;
+    margin-top: 10px;
+}
+
+#formulario input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f8ff00; /* Azul claro */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#formulario button {
+    background-color: #f8ff00; /* Azul oscuro */
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#formulario button:hover {
+    background-color: #0056b3; /* Azul oscuro más intenso */
+}
+
+#resultado {
+    text-align: center;
+}
+
+#resultado img {
+    max-width: 100%;
+}
+
+/* Estilos para pantallas pequeñas (menos de 600px) */
+@media screen and (max-width: 599px) {
+    #formulario {
+        width: 90%;
+    }
+}
+
+/* Estilos para pantallas medianas (entre 600px y 1024px) */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    #formulario {
+        width: 80%;
+    }
+}
+
+/* Estilos para pantallas grandes (más de 1024px) */
+@media screen and (min-width: 1025px) {
+    #formulario {
+        width: 70%;
+    }
+}
